@@ -1,15 +1,35 @@
-# log-scoring-model
+# Log Scoring Model
 
-This Python script was created for the purpose of analyzing login logs, with a focus on detecting patterns related to credential stuffing attacks.
+This Python script was created to analyze login logs with a focus on detecting **credential stuffing attacks**.
 
-It processes login records, applies multiple risk indicators (such as off-hour logins, suspicious networks, IP/email frequency, country sensitivity, and tool usage), and produces:
+## Features
+The script processes login records and applies multiple risk indicators, including:
+- ⏰ Off-hour logins  
+- 🌐 Suspicious network types  
+- 🔑 IP / Email frequency anomalies  
+- 🌍 Country sensitivity  
+- 🛠️ Tool usage distribution  
 
-A labeled dataset with risk scores
+## Outputs
+The analysis produces:
+- 📊 **Labeled dataset** with risk scores  
+- 🚨 **Summary of malicious logins**  
+- 📈 **Statistical reports**  
+- 🔐 **List of compromised credentials**  
 
-Summaries of malicious logins
+All results are exported as structured **Excel reports** for further investigation.
 
-Statistical reports
+## Usage
+1. Place your dataset as `dataset.xlsx` in the same folder.  
+2. Run the script:
+   ```bash
+   python log_scoring_model.py
+3. Generated reports:
 
-A list of compromised credentials
+labeled_logins.xlsx
 
-The output is saved as structured Excel reports for further investigation.
+malicious_summary.xlsx
+
+malicious_stats.xlsx
+
+compromised_credentials.xlsx
